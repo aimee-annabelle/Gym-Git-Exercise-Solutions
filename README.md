@@ -24,6 +24,7 @@ ojemba@MacBook-Pro-von-ojemba git-exercise % history
   182  git push origin --set-upstream test
   183  git checkout dev
   184  git branch -d test
+  185  git push origin -d test
 ojemba@MacBook-Pro-von-ojemba git-exercise % 
 ```
 ### Exercise 2
