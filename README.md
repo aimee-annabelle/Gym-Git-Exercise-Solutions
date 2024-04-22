@@ -96,4 +96,18 @@ Dropped refs/stash@{0} (bfd052a9acac42b92fa3809b418d33b57cd5373d)
 ojemba@MacBook-Pro-von-ojemba git-exercise % git reset --hard
 HEAD is now at de5cd60 home and about pages stashed and poped
 ```
+## Bundle 2
+
+### Exercise 1
+
+```bash
+ojemba@MacBook-Pro-von-ojemba git-exercise % git checkout -b ft/bundle-2
+Switched to a new branch 'ft/bundle-2'
+ojemba@MacBook-Pro-von-ojemba git-exercise % git add -A
+ojemba@MacBook-Pro-von-ojemba git-exercise % git commit -m "new changes on readme with new file services"
+[ft/bundle-2 f3fd68a] new changes on readme with new file services
+ 2 files changed, 14 insertions(+), 91 deletions(-)
+ create mode 100644 services.html
+ojemba@MacBook-Pro-von-ojemba git-exercise % git push origin ft/bundle-2
+```
 
