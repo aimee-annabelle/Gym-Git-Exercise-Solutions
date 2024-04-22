@@ -111,3 +111,77 @@ ojemba@MacBook-Pro-von-ojemba git-exercise % git commit -m "new changes on readm
 ojemba@MacBook-Pro-von-ojemba git-exercise % git push origin ft/bundle-2
 ```
 
+### Exercise 2
+
+```bash
+ojemba@MacBook-Pro-von-ojemba git-exercise % git checkout -b "ft/service-redesign"
+Switched to a new branch 'ft/service-redesign'
+ojemba@MacBook-Pro-von-ojemba git-exercise % git add -A
+ojemba@MacBook-Pro-von-ojemba git-exercise % git commit -m "updated services page"
+[ft/service-redesign c7a4bf8] updated services page
+ 1 file changed, 1 insertion(+)
+ojemba@MacBook-Pro-von-ojemba git-exercise % git push origin ft/service-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 340 bytes | 340.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'ft/service-redesign' on GitHub by visiting:
+remote:      https://github.com/aimee-annabelle/TheGymGitExercises/pull/new/ft/service-redesign
+remote: 
+To https://github.com/aimee-annabelle/TheGymGitExercises.git
+ * [new branch]      ft/service-redesign -> ft/service-redesign
+ojemba@MacBook-Pro-von-ojemba git-exercise % git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+ojemba@MacBook-Pro-von-ojemba git-exercise % git add services.html 
+ojemba@MacBook-Pro-von-ojemba git-exercise % git commit -m "main branch changes on services page"
+[main 2d14fb0] main branch changes on services page
+ 1 file changed, 1 insertion(+)
+ojemba@MacBook-Pro-von-ojemba git-exercise % git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 362 bytes | 362.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/aimee-annabelle/TheGymGitExercises.git
+   05c16c1..2d14fb0  main -> main
+ojemba@MacBook-Pro-von-ojemba git-exercise % git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+ojemba@MacBook-Pro-von-ojemba git-exercise % git diff ft/service-redesign main
+diff --git a/services.html b/services.html
+index ccf1d0f..9f875a2 100644
+--- a/services.html
++++ b/services.html
+@@ -7,6 +7,6 @@
+ </head>
+ <body>
+     <h1> Services page</h1>
+-    <p>New changes to services page</p>
++    <span>Different changes from previous ones</span>
+ </body>
+ </html>
+\ No newline at end of file
+ojemba@MacBook-Pro-von-ojemba git-exercise % git merge main
+Auto-merging services.html
+CONFLICT (content): Merge conflict in services.html
+Automatic merge failed; fix conflicts and then commit the result.
+ojemba@MacBook-Pro-von-ojemba git-exercise % git add services.html 
+ojemba@MacBook-Pro-von-ojemba git-exercise % git commit -m "merged with main"
+[ft/service-redesign f1b8c72] merged with main
+ojemba@MacBook-Pro-von-ojemba git-exercise % git push origin ft/service-redesign
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 218 bytes | 218.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/aimee-annabelle/TheGymGitExercises.git
+   c7a4bf8..f1b8c72  ft/service-redesign -> ft/service-redesign
+ojemba@MacBook-Pro-von-ojemba git-exercise % 
+```
+
+
