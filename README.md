@@ -451,4 +451,44 @@ To https://github.com/aimee-annabelle/TheGymGitExercises.git
  * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
 ojemba@MacBook-Pro-von-ojemba git-exercise %
 ```
+## Bundle 4
+### Exercise 1
 
+```bash
+ojemba@MacBook-Pro-von-ojemba git-exercise % git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+ojemba@MacBook-Pro-von-ojemba git-exercise % git remote add git-copy https://github.com/aimee-annabelle/TheGymGitExercisesCopy.git
+ojemba@MacBook-Pro-von-ojemba git-exercise % giit remote -v
+zsh: command not found: giit
+ojemba@MacBook-Pro-von-ojemba git-exercise % git remote -v 
+git-copy	https://github.com/aimee-annabelle/TheGymGitExercisesCopy.git (fetch)
+git-copy	https://github.com/aimee-annabelle/TheGymGitExercisesCopy.git (push)
+origin	https://github.com/aimee-annabelle/TheGymGitExercises.git (fetch)
+origin	https://github.com/aimee-annabelle/TheGymGitExercises.git (push)
+ojemba@MacBook-Pro-von-ojemba git-exercise % git add --all
+ojemba@MacBook-Pro-von-ojemba git-exercise % git commit -m "updates on home page after adding new repo"
+[main 249bf92] updates on home page after adding new repo
+ 1 file changed, 3 insertions(+)
+ojemba@MacBook-Pro-von-ojemba git-exercise % git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 376 bytes | 376.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/aimee-annabelle/TheGymGitExercises.git
+   35ab3e0..249bf92  main -> main
+ojemba@MacBook-Pro-von-ojemba git-exercise % git push git-copy main
+Enumerating objects: 30, done.
+Counting objects: 100% (30/30), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (28/28), done.
+Writing objects: 100% (30/30), 5.39 KiB | 2.69 MiB/s, done.
+Total 30 (delta 10), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (10/10), done.
+To https://github.com/aimee-annabelle/TheGymGitExercisesCopy.git
+ * [new branch]      main -> main
+ojemba@MacBook-Pro-von-ojemba git-exercise %
+```
