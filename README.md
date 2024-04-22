@@ -492,3 +492,80 @@ To https://github.com/aimee-annabelle/TheGymGitExercisesCopy.git
  * [new branch]      main -> main
 ojemba@MacBook-Pro-von-ojemba git-exercise %
 ```
+
+### Exercise 2
+
+```bash
+ojemba@MacBook-Pro-von-ojemba git-exercise % git checkout -b ft/footer
+Switched to a new branch 'ft/footer'
+ojemba@MacBook-Pro-von-ojemba git-exercise % git add --all
+ojemba@MacBook-Pro-von-ojemba git-exercise % git commit -m "feat: footer"
+[ft/footer 64c9926] feat: footer
+ 2 files changed, 24 insertions(+), 1 deletion(-)
+ojemba@MacBook-Pro-von-ojemba git-exercise % git push origin ft/footer
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 513 bytes | 513.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/aimee-annabelle/TheGymGitExercises/pull/new/ft/footer
+remote: 
+To https://github.com/aimee-annabelle/TheGymGitExercises.git
+ * [new branch]      ft/footer -> ft/footer
+ojemba@MacBook-Pro-von-ojemba git-exercise % git add --all               
+ojemba@MacBook-Pro-von-ojemba git-exercise % git commit -m "new file footer"
+[ft/footer 69d2ca4] new file footer
+ 1 file changed, 11 insertions(+)
+ create mode 100644 footer.html
+ojemba@MacBook-Pro-von-ojemba git-exercise % git push origin ft/footer      
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 444 bytes | 444.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/aimee-annabelle/TheGymGitExercises.git
+   64c9926..69d2ca4  ft/footer -> ft/footer
+ojemba@MacBook-Pro-von-ojemba git-exercise % git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+ojemba@MacBook-Pro-von-ojemba git-exercise % git checkout -b ft/squashing
+Switched to a new branch 'ft/squashing'
+ojemba@MacBook-Pro-von-ojemba git-exercise % git merge --squash ft/footer
+Updating 249bf92..69d2ca4
+Fast-forward
+Squash commit -- not updating HEAD
+ README.md   | 24 +++++++++++++++++++++++-
+ footer.html | 11 +++++++++++
+ home.html   |  1 +
+ 3 files changed, 35 insertions(+), 1 deletion(-)
+ create mode 100644 footer.html
+ojemba@MacBook-Pro-von-ojemba git-exercise % git commit -m "squashed footer commits into one"
+[ft/squashing 4423ecb] squashed footer commits into one
+ 3 files changed, 35 insertions(+), 1 deletion(-)
+ create mode 100644 footer.html
+ojemba@MacBook-Pro-von-ojemba git-exercise % git push origin ft/squashing
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 740 bytes | 740.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/aimee-annabelle/TheGymGitExercises/pull/new/ft/squashing
+remote: 
+To https://github.com/aimee-annabelle/TheGymGitExercises.git
+ * [new branch]      ft/squashing -> ft/squashing
+ojemba@MacBook-Pro-von-ojemba git-exercise % git status
+On branch ft/squashing
+nothing to commit, working tree clean
+ojemba@MacBook-Pro-von-ojemba git-exercise %
+```
+
