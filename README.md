@@ -569,3 +569,40 @@ nothing to commit, working tree clean
 ojemba@MacBook-Pro-von-ojemba git-exercise %
 ```
 
+## Bundle 5
+
+### Exercise 2
+
+```bash
+ojemba@MacBook-Pro-von-ojemba theGym % git clone https://github.com/aimee-annabelle/git-cafe-exercise.git
+Cloning into 'git-cafe-exercise'...
+remote: Enumerating objects: 107, done.
+remote: Counting objects: 100% (14/14), done.
+remote: Compressing objects: 100% (10/10), done.
+remote: Total 107 (delta 5), reused 4 (delta 4), pack-reused 93
+Receiving objects: 100% (107/107), 1.95 MiB | 930.00 KiB/s, done.
+Resolving deltas: 100% (5/5), done.
+ojemba@MacBook-Pro-von-ojemba theGym % cd git-cafe-exercise 
+ojemba@MacBook-Pro-von-ojemba git-cafe-exercise % ls
+README.md	bat		css		images		index-1.html	index-2.html	index-3.html	index-4.html	index.html	js
+ojemba@MacBook-Pro-von-ojemba git-cafe-exercise % git remote
+origin
+ojemba@MacBook-Pro-von-ojemba git-cafe-exercise % git remote -v
+origin	https://github.com/aimee-annabelle/git-cafe-exercise.git (fetch)
+origin	https://github.com/aimee-annabelle/git-cafe-exercise.git (push)
+ojemba@MacBook-Pro-von-ojemba git-cafe-exercise % git add .
+ojemba@MacBook-Pro-von-ojemba git-cafe-exercise % git commit -m "changed index file - from place to restaurant"
+[main 7238924] changed index file - from place to restaurant
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ojemba@MacBook-Pro-von-ojemba git-cafe-exercise % git push origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 337 bytes | 337.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/aimee-annabelle/git-cafe-exercise.git
+   d1d3f9c..7238924  main -> main
+ojemba@MacBook-Pro-von-ojemba git-cafe-exercise %
+```
